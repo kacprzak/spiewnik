@@ -10,4 +10,4 @@ spiewnik.pdf: $(SOURCES)
 	pdflatex spiewnik.tex
 
 
-.PHONY: all clean
+.PHONY: all clean spiewnik.pdf
