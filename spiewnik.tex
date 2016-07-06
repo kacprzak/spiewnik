@@ -1,17 +1,20 @@
 \documentclass[a4paper]{article}
+\usepackage{fontspec}
+\usepackage{polyglossia}
 \usepackage[chorded]{songs}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage[T1]{fontenc}
-\usepackage{polski}
-\usepackage[russian,english,czech,polish]{babel}
 \usepackage[margin={1cm,2cm}]{geometry}
+
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Ubuntu}
+
+\setdefaultlanguage{polish}
+\setotherlanguages{russian,english,czech}
 
 \noversenumbers
 
 \begin{document}
 
-\newcommand{\m}{--}
+\newcommand{\mi}{--}
 \newcommand{\halfdim}{\textsuperscript{ø}}
 \newcommand{\dimseven}{\textsuperscript{o}}
 \newcommand{\majseven}{$\Delta$}

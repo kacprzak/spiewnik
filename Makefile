@@ -1,3 +1,4 @@
+TEX=lualatex
 TARGET=spiewnik.pdf
 SOURCES=*.tex
 
@@ -7,7 +8,7 @@ clean:
 	rm *.aux *.log *.toc $(TARGET)
 
 spiewnik.pdf: $(SOURCES)
-	pdflatex spiewnik.tex
+	$(TEX) spiewnik.tex
 
 
 .PHONY: all clean spiewnik.pdf
