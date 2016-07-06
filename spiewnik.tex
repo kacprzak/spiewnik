@@ -5,7 +5,12 @@
 \usepackage[margin={1cm,2cm}]{geometry}
 
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{Ubuntu}
+\setmainfont{Liberation Serif}
+
+\newfontface\chordfont{NewRealBookChords}[
+  Path=./fonts/,
+  Extension=.ttf,
+]
 
 \setdefaultlanguage{polish}
 \setotherlanguages{russian,english,czech}
@@ -14,12 +19,18 @@
 
 \begin{document}
 
-\newcommand{\mi}{--}
-\newcommand{\halfdim}{\textsuperscript{ø}}
-\newcommand{\dimseven}{\textsuperscript{o}}
-\newcommand{\majseven}{$\Delta$}
-\newcommand{\diminished}{dim}
+\newcommand{\mi}{-}
+\newcommand{\diminished}{\symbol{186}}
 \newcommand{\augumented}{aug}
+\newcommand{\tbemol}{\symbol{223}}
+\newcommand{\tsharp}{?}
+\newcommand{\halfdim}{\symbol{187}}
+\newcommand{\dimseven}{\diminished7}
+\newcommand{\majseven}{\symbol{205}}
+
+\renewcommand{\printchord}[1]{\chordfont#1}
+\renewcommand{\sharpsymbol}{\tsharp}
+\renewcommand{\flatsymbol}{\tbemol}
 
 \title{\Huge Śpiewnik}
 \author{Marcin Kacprzak}
