@@ -4,5 +4,5 @@ Symbole akordów
 ---------------
 * − = min
 * Δ = maj7
-* o = dim7
+* o = dim
 * ø = min7b5
